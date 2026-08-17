@@ -24,14 +24,14 @@ Data jadwal/notes/todo perlu disimpan permanen (Vercel tidak punya penyimpanan f
 
 Di **Settings → Environment Variables**, tambahkan (contoh lengkap ada di `.env.example`):
 
-| Variable | Isi dengan |
-|---|---|
-| `ADMIN_PASSWORD` | Password admin pilihanmu |
-| `ADMIN_SECRET` | String acak panjang (buat sendiri, misal dari [passwordsgenerator.net](https://passwordsgenerator.net)) |
-| `VAPID_PUBLIC_KEY` | Sudah ada key siap pakai di `.env.example`, atau generate baru: `npx web-push generate-vapid-keys` |
-| `VAPID_PRIVATE_KEY` | Pasangan dari key di atas |
-| `VAPID_SUBJECT_EMAIL` | Email kamu (syarat protokol Web Push) |
-| `CRON_SECRET` | String acak lain — Vercel otomatis mengirim ini saat menjalankan cron |
+| Variable              | Isi dengan                                                                                              |
+| --------------------- | ------------------------------------------------------------------------------------------------------- | --- |
+| `ADMIN_PASSWORD`      | Password admin pilihanmu                                                                                |
+| `ADMIN_SECRET`        | String acak panjang (buat sendiri, misal dari [passwordsgenerator.net](https://passwordsgenerator.net)) |     |
+| `VAPID_PUBLIC_KEY`    | Sudah ada key siap pakai di `.env.example`, atau generate baru: `npx web-push generate-vapid-keys`      |
+| `VAPID_PRIVATE_KEY`   | Pasangan dari key di atas                                                                               |
+| `VAPID_SUBJECT_EMAIL` | Email kamu (syarat protokol Web Push)                                                                   |
+| `CRON_SECRET`         | String acak lain — Vercel otomatis mengirim ini saat menjalankan cron                                   |
 
 > ⚠️ Key di `.env.example` sudah pernah dibuat lewat chat ini, jadi sebaiknya generate ulang
 > `VAPID_PUBLIC_KEY`/`VAPID_PRIVATE_KEY` sendiri sebelum dipakai serius (`npx web-push generate-vapid-keys`).
@@ -52,7 +52,7 @@ Kalau `*/10 * * * *` ditolak, ubah ke `0 * * * *` di `vercel.json`, yang artinya
 - **Semua orang** buka `https://nama-project-kamu.vercel.app` untuk lihat jadwal, cari kelas,
   export ke Google Calendar, cetak PDF, atau bagikan ke WhatsApp grup kelas.
 - **Aktifkan notifikasi**: klik tombol "🔔 Aktifkan notifikasi" di HP Android (pakai Chrome).
-  Untuk notifikasi paling stabil, tambahkan ke homescreen dulu (menu Chrome → *Add to Home screen*),
+  Untuk notifikasi paling stabil, tambahkan ke homescreen dulu (menu Chrome → _Add to Home screen_),
   baru buka dari ikon itu dan aktifkan notifikasinya.
 - **Admin**: buka `/admin`, login pakai `ADMIN_PASSWORD`. Dari situ bisa tambah/edit/hapus
   mata kuliah, ubah notes & link materi, dan kelola todo list. Perubahan langsung tampil
