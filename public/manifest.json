@@ -1,0 +1,14 @@
+{
+  "name": "Jadwal Kuliah Kelas A",
+  "short_name": "Jadwal Kelas A",
+  "description": "Jadwal, notes, materi, todo list, dan reminder kuliah Kelas A Semester 1.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0c2440",
+  "theme_color": "#0c2440",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
